@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="text-align: center;
+font-size: 25px;">
+    <h1>Описание</h1>
+    <div style="margin: auto;
+    padding: 20px;
+    width: 850px;">
+        <h3>Имя исполнителя (группы):</h3>
+        <p>{{ person.name }}</p>
+        <h3>Год рождения исполнителя (создания группы):</h3>
+        <p>{{ person.data }}</p>
+        <h3>Описание исполнителя (группы):</h3>
+        <p>{{ person.description }}</p>
+    </div>
+    <a href="{% url 'home' %}"><button style="font-size: 30px;
+                               margin: auto;
+                               margin-top: 40px;
+                               padding: 15px;
+                               width: 300px;">Жанры</button></a>
+</body>
+</html>

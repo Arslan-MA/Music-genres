@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="text-align: center;">
+    <h1>Исполнители</h1>
+    <div style="margin: auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);">
+        {% for performer in performers %}
+            <a href="{{ performer.get_absolute_url }}">
+                <button style="font-size: 40px;
+                border: 3px solid;
+                border-radius: 25px;
+                margin: auto;
+                padding: 20px;
+                width: 400px;">
+                    {{ performer.name }}
+                </button>
+            </a>
+        {% endfor %}
+    </div>
+    <a href="{% url 'home' %}"><button style="font-size: 30px;
+                               margin: auto;
+                               margin-top: 100px;
+                               padding: 15px;
+                               width: 300px;">Жанры</button></a>
+</body>
+</html>

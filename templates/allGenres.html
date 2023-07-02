@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body style="text-align: center;">
+    <h1>Жанры</h1>
+    <div style="margin: auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);">
+        <div style="border: 3px solid;
+        margin: auto;
+        padding: 15px;
+        width: 275px;
+        height: 300px;
+        background-image: url('https://i.pinimg.com/736x/ac/21/97/ac2197098ef8760e5582c1722381d6c1--art-music-rock-art.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+            <a href="{% url 'rock:performers_1'%}"><button style="font-size: 15px;
+            padding: 8px;
+            width: 150px;
+            margin-top: 260px;">Рок</button></a>
+        </div>
+        <div style="border: 3px solid;
+        margin: auto;
+        padding: 15px;
+        width: 275px;
+        height: 300px;
+        background-image: url('https://i.pinimg.com/736x/fc/1b/cf/fc1bcf033de8e39edc6276d89d161847--jazz-cat-ornette-coleman.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+            <a href="{% url 'jazz:performers_1' %}"><button style="font-size: 15px;
+            padding: 8px;
+            width: 150px;
+            margin-top: 260px;">Джаз</button></a>
+        </div>
+        <div style="border: 3px solid;
+        margin: auto;
+        padding: 15px;
+        width: 275px;
+        height: 300px;
+        background-image: url('https://c0.wallpaperflare.com/preview/92/251/615/guitar-music-rock-skull.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+            <a href="{% url 'metal:performers_1' %}"><button style="font-size: 15px;
+            padding: 8px;
+            width: 150px;
+            margin-top: 260px;">Метал</button></a>
+        </div>
+        <div style="border: 3px solid;
+        margin: auto;
+        padding: 15px;
+        width: 275px;
+        height: 300px;
+        background-image: url('https://images.genius.com/9fad7b1f49fdba562dec5bfc0fcb2532.809x1000x1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+            <a href="{% url 'punk_rock:performers_1' %}"><button style="font-size: 15px;
+            padding: 8px;
+            width: 150px;
+            margin-top: 260px;">Панк-рок</button></a>
+        </div>
+        <div style="border: 3px solid;
+        margin: auto;
+        padding: 15px;
+        width: 275px;
+        height: 300px;
+        background-image: url('https://img5.goodfon.ru/wallpaper/nbig/2/e3/synth-retrowave-synthwave-new-retro-wave-sintveiv-retrove-15.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+            <a href="{% url 'retrowave:performers_1' %}"><button style="font-size: 15px;
+            padding: 8px;
+            width: 150px;
+            margin-top: 260px;">Ретровейв</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
